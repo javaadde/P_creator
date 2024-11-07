@@ -430,12 +430,16 @@ span{
 
 
 
+    .User-manual{
+        margin-top: 130vh;
+    }
 
 
     .using-video video{
-        width: 50%;
-       margin-left: 25%;
+        width: 70%;
+       margin-left: 16%;
     }
+    
     .user-M{
         margin-top: 0;
         width: 70%;
@@ -458,11 +462,14 @@ span{
 
 
     .head{
-        margin-top: 25vh;
+        margin-top: 5vh;
     }
 
     .head h1{
-        font-size: 25px;
+        font-size: 20px;
+    }
+    .point h2{
+        font-size: 19px;
     }
 
     .benefits{
@@ -483,7 +490,7 @@ span{
     }
 
     #learn-me{
-        height: 230vh;
+        height: 300vh;
     }
 
 

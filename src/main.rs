@@ -1,4 +1,5 @@
 
+use std::env;
 use actix_files::Files;
 use actix_cors::Cors;
 use  actix_files::NamedFile;
@@ -37,6 +38,9 @@ async fn index() -> impl Responder {
 
 async fn main() -> std::io::Result<()>{
 
+   let port = env::var("PORT").unwrap_or_else(|_| "10000".to_string());
+   let port = port.parse::<u16>().expect("PORT must be a valid u16");
+
     HttpServer::new(|| {
        App::new()
        .wrap(Cors::permissive())
@@ -44,7 +48,7 @@ async fn main() -> std::io::Result<()>{
        .service(Files::new("/static", "./static"))
        .route("/", web::get().to(index))
     })
-    .bind("127.0.0.1:10000")?
+    .bind(("0.0.0.0",port))?
     .run()
     .await
 }

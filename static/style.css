@@ -48,7 +48,7 @@
 
 
 #learn-me{
-    height: 100vh;
+    height: 180vh;
 }
 
 
@@ -195,7 +195,7 @@ span{
     margin-top: 10%;
     margin-left: 15%;
     width: 30%;
-    height: 30%;
+    height: 510px;
 
     padding-top: 20px;
     padding-bottom: 20px;
@@ -219,9 +219,26 @@ span{
 
 .user-M h2{
     color: #27aefb;
+    font-size: 38px;
+    font-family: "Righteous", serif;
+
 }
 
+.user-M p{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2%;
+    font-size: 28px;
+    color: #b0dfee;
+    text-align: start;
 
+    font-family: "Itim", cursive;
+
+}
+
+.user-M  #sp{
+    font-size: 18px;
+}
 
 /*              */
 /*   bottom     */
@@ -258,9 +275,93 @@ span{
 .maider{
     position: absolute;
     margin-top: 70px;
-   margin-left: 45%;
+   margin-left: 46%;
 }
 
+
+
+/*              */
+/*   benefits   */
+/*              */
+
+
+.benefits{
+    height: 30vh;
+    margin-top: 100px;
+    text-align: center;
+
+    display:  flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.head h1{
+    color:#27aefb;
+    font-size: 46px;
+
+    font-family: "Righteous", serif;
+}
+.head{
+    text-align: center;
+    margin-top: 33vh;
+}
+
+
+.benefits .point{
+    width: 300px;
+    height: 300px;
+    margin-left: 60px;
+    border: 2px solid #000;
+    box-shadow: 0 0 30px #000;
+}
+
+
+.icon{
+    height: 35%;
+}
+.icon i{
+    font-size: 80px;
+    margin-top: 10px;
+    color:#71a6b8fa;
+}
+.point h2{
+    height: 15%;
+    font-family: "Righteous", serif;
+
+    color: #16ead1;
+}
+
+.point p{
+    height: 50%;
+    width: 80%;
+    margin-left: 10%;
+    font-family: "Itim", cursive;
+    font-size: 16px;
+    color: #fff;
+}
+
+
+
+
+/*              */
+/*   webkits    */
+/*              */
+
+
+
+::-webkit-scrollbar{
+    width: 3px;
+}
+::-webkit-scrollbar-track{
+    background:#000;
+}
+::-webkit-scrollbar-thumb{
+    background: #16ead1;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #16ea44;
+}
 
 
 
@@ -272,6 +373,10 @@ span{
 
         width: 100%;
 
+    }
+
+    .using-video video{
+        height: 250px;
     }
 
     .learn-about a{
@@ -329,10 +434,52 @@ span{
     }
     .user-M{
         margin-top: 0;
-        width: 60%;
-        height: 350px;
+        width: 70%;
+        height: 400px;
         margin-top: 20px;
-        margin-left: 20.5%;
+        margin-left: 16%;
+    }
+
+    .user-M h2{
+        font-size: 26px;
+    }
+    .user-M p{
+        font-size: 18px;
+    }
+
+    .user-M #sp{
+        padding-top: 20px;
+        font-size: 12px;
+    }
+
+
+    .head{
+        margin-top: 25vh;
+    }
+
+    .head h1{
+        font-size: 25px;
+    }
+
+    .benefits{
+        margin-top: 30px;
+    }
+    .benefits .point{
+        width: 230px;
+        height: 260px;
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+
+    .icon i{
+        font-size: 50px;
+    }
+    .icon {
+        height: 30%;
+    }
+
+    #learn-me{
+        height: 230vh;
     }
 
 

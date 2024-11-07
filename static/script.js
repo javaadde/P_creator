@@ -7,7 +7,7 @@ async function create() {
     const leg = document.getElementById('length').value;
     
 
-    const response = await fetch(`http://127.0.0.1:8080/creator/${leg}`);
+    const response = await fetch(`http://127.0.0.1:8083/creator/${leg}`);
     const result = await response.text();
 
     document.getElementById("result").value = result;

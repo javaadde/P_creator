@@ -44,7 +44,7 @@ async fn main() -> std::io::Result<()>{
        .service(Files::new("/static", "./static"))
        .route("/", web::get().to(index))
     })
-    .bind("127.0.0.1:8098")?
+    .bind("127.0.0.1:8072")?
     .run()
     .await
 }

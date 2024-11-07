@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P - creatore</title>
+    <title>P - creator</title>
 
-    <link rel="icon" href="logo.png" type="image/png"> <!-- .ico file -->
+    <link rel="icon" href="/static/logo.png" type="image/png"> <!-- .ico file -->
 
 
     <link rel="stylesheet" href="/static/style.css">
@@ -14,29 +14,105 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
+
+
+
 <body>
+
+
+    <section class="home">
+
+
+    <div class="learn-about">
+        <a href="#learn-me">learn about Me</a>
+    </div>
+
     
      <div class="headding">
         <span>wellcome to</span>
-        <h1>P - creatore</h1>
+        <h1>P - creator</h1>
+
+        <img src="/static/logo.png" alt="">
      </div>
      
 
 
    <div class="client">
-    <p>enter password lenght</p>
+    <!-- <p>Lenght:</p> -->
     <input type="text"  id="length">
     <button onclick="create()">Create</button>
    </div>
 
 
    <div class="console">
-     <input type="text" id="result" placeholder="enter a lenght"  readonly></input>
+     <input type="text" id="result" placeholder="enter a lenght  👆"  readonly></input>
+
+
+     <div class="copy-icon">
+        <i id="copy" class='bx bxs-copy'></i>
+       </div>
+
    </div>
 
-   <div class="copy-icon">
-    <i id="copy" class='bx bxs-copy'></i>
-   </div>
+    </section>
+
+
+
+
+   <section id="learn-me">
+
+    <div class="User-manual">
+
+      <div class="using-video">
+        <video src="/static/using.webm" autoplay loop muted></video>
+      </div>
+
+      <div class="user-M">
+        <h2>User Manual</h2>
+        <p></p>
+      </div>
+
+    </div>
+
+
+    <div class="benefits">
+
+        <div id="1">
+            <h2></h2>
+            <p></p>
+        </div>
+
+        <div id="2">
+            <h2></h2>
+            <p></p>
+        </div>
+
+           
+        <div id="3">
+            <h2></h2>
+            <p></p>
+        </div>
+   
+
+        
+    </div>
+
+
+
+   </section>
+  
+
+
+   <section class="bottom">
+   
+    <div class="maider">
+      <span onclick="Link()"><h3>
+            maid by <i><img src="/static/J.png" alt=""></i>
+      </h3></span>
+    </div>
+   
+   </section>
+
 
 
     <script src="/static/script.js"></script>

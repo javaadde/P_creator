@@ -7,7 +7,7 @@ async function create() {
     const leg = document.getElementById('length').value;
     
 
-    const response = await fetch(`http://127.0.0.1:8098/creator/${leg}`);
+    const response = await fetch(`http://127.0.0.1:8073/creator/${leg}`);
     const result = await response.text();
 
     document.getElementById("result").value = result;
@@ -30,3 +30,9 @@ copyButton.addEventListener('click', () => {
   alert('Text copied to clipboard!');
 
 });
+
+
+function Link(){
+    window.location.href="https://javaadde.github.io/portfolio"
+}
+

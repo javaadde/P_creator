@@ -3,167 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P - creator</title>
+    <title>pickpazzz</title>
+    <link rel="stylesheet" href="static/style.css">
 
-    <link rel="icon" href="/static/logo.png" type="image/png"> <!-- .ico file -->
-
-
-    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" href="static/log.png" type="image/png">
 
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
-
-
-
 <body>
 
 
-    <section class="home">
 
 
-    <div class="learn-about">
-        <a href="#learn-me">learn about Me</a>
+    <div class="cont-boy-read">
+
+        <div class="text-container">
+
+            <p>A strong, unique password
+                 is your first line of defense 
+                 online—think of it like a secure 
+                 lock on your front door
+            </p>
+
+            <a href="#readmore">read more</a>
+
+        </div>
+
+        <div class="text-direction">
+        </div>
+
+        <div class="boy-container">
+            <img src="static/images/boy.png" alt="">
+        </div>
+
     </div>
-
     
-     <div class="headding">
-        <span>wellcome to</span>
-        <h1>P - creator</h1>
-
-        <img src="/static/logo.png" alt="">
-     </div>
-     
 
 
-   <div class="client">
-    <!-- <p>Lenght:</p> -->
-    <input type="text"  id="length">
-    <button onclick="create()">Create</button>
-   </div>
 
 
-   <div class="console">
-     <input type="text" id="result" placeholder="enter a lenght  👆"  readonly></input>
+
+    <section class="lock" id="lock">
+        <div class="creator">
+
+            <input type="text" id="result" readonly>
+
+            <button id="copy-btn">copy</button>
+
+            <button id="generate-btn" onclick="create()">generate</button>
+
+            <span id="minus" onclick="decreaseRange()"><i class='bx bx-minus' ></i></span>
+            <input type="range" min="8" max="50" id="length" oninput="updateValue(this.value)">
+            <span id="plus" onclick="increaseRange()"><i class='bx bx-plus'></i></span>
+
+            <p id="length-txt">Length : <span id="rangeValue">29</span></p>
 
 
-     <div class="copy-icon">
-        <i id="copy" class='bx bxs-copy'></i>
-       </div>
-
-   </div>
-
+        </div>
     </section>
 
 
 
 
-   <section id="learn-me">
 
-
-    <div class="head">
-        <h1> How Is This Strong And Safe</h1>
+    <div class="mobile-only">
+        
+        <span> scroll <i class='bx bx-chevrons-up bx-fade-up'></i></span>
     </div>
 
 
-    <div class="benefits">
 
 
-        <div class="point" >
+    <section class="readmore" id="readmore">
+        <div class="how-is-this">
 
-            <div class="icon">
-                <i class='bx bx-lock' ></i>
+            <h1>How Is This Strong And Safe</h1>
+
+
+         <div class="mith-container">
+
+            <div class="mith">
+                <div class="icon">   
+                   <i class='bx bx-lock' ></i>
+                </div>
+                
+                <h2>Long</h2>
+                
+                <div class="para">
+                    <p>The longer a password, 
+                        the more secure it is.
+                         A strong password should
+                        be at least 10
+                       characters long.
+                    </p>
+                </div>
             </div>
 
-            <h2>Long</h2>
-            <p>The longer a password, the more secure it is. A 
-                strong password should be at least 10 characters long.</p>
 
-        </div>
-
-        <div class="point" >
-            <div class="icon">
-                <i class='bx bxs-key' ></i>
+            <div class="mith">
+                <div class="icon"> 
+                    <i class='bx bxs-key' ></i>
+                </div>
+                
+                <h2>Complex</h2>
+                
+                <div class="para">
+                    <p>Strong passwords use a 
+                        combination of letters, numbers, cases, 
+                        and symbols to form an 
+                        unpredictable string of characters 
+                        that doesn't resemble words or names.
+                    </p>
+                </div>
             </div>
 
-            <h2>Complex</h2>
-            <p>Strong passwords use a combination of letters, numbers, cases, 
-                and symbols to form an unpredictable string of
-                 characters that doesn't resemble words or names.</p>
 
-        </div>
+            <div class="mith">
+                <div class="icon"> 
+                    <i class='bx bx-fingerprint' > </i>
+                </div>
+                
+                <h2>Unique</h2>
+                
+                <div class="para">
+                    <p>Unique
 
-
-        <div class="point" >
-            <div class="icon">
-                <i class='bx bx-fingerprint' ></i>
+                        A strong password should be 
+                        unique to each account to 
+                        reduce vulnerability in the
+                         event of a hack.
+                    </p>
+                </div>
             </div>
 
-            <h2>Unique</h2>
-            <p>A strong password should be unique to
-                 each account to reduce
-                 vulnerability in the event of a hack.</p>
+          </div>
+
         </div>
+    </section>
    
 
-        
-    </div>
-
-    <div class="User-manual">
-
-      <div class="using-video">
-        <video src="/static/using.mp4" autoplay loop muted></video>
-      </div>
-
-      <div class="user-M">
-        <h2>User Manual</h2>
-        <p>
-            
-            Click on the emty colum
-            near of the Create button and 
-            type your password length 
-            in number then Click on the 
-            Create button then you got your 
-            safest password .
-            
-            If you want another one Click 
-            on the Create button again you 
-            will get another one .
-
-            Take your password clicking
-            the copy icon it will copied to your Clip Bord.
-
-        </p>
 
 
-        <span id="sp">have a safe day 🤗</span>
 
-      </div>
+    <section class="outer">
 
-    </div>
+        <div class="jd">
+            <h3>made by jd </h3>
+        </div>
 
+        <div class="to-know">
+            <span>to khow who is it <a href="https://javaadde.github.io/portfolio/">here</a></span>
+        </div>
+
+    </section>
 
     
-
-
-
-   </section>
-  
-
-
-   <section class="bottom">
-   
-    <div class="maider">
-      <span onclick="Link()"><h3>
-            maid by <i><img src="/static/J.png" alt=""></i>
-      </h3></span>
-    </div>
-   
-   </section>
-
-
-
-    <script src="/static/script.js"></script>
+    <script src="static/script.js"></script>
 </body>
 </html>

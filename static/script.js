@@ -17,7 +17,7 @@ async function create() {
 
 
 
-const copyButton = document.getElementById('copy');
+const copyButton = document.getElementById('copy-btn');
 const textField = document.getElementById('result');
 
 copyButton.addEventListener('click', () => {
@@ -35,4 +35,34 @@ copyButton.addEventListener('click', () => {
 function Link(){
     window.location.href="https://javaadde.github.io/portfolio"
 }
+
+
+
+
+
+
+function updateValue(value) {
+  document.getElementById("rangeValue").textContent = value;
+}
+
+
+
+
+
+function increaseRange() {
+  const rangeInput = document.getElementById("length");
+  if (rangeInput.value < rangeInput.max) {
+      rangeInput.value = parseInt(rangeInput.value) + 1;
+      updateValue(rangeInput.value);
+  }
+}
+
+function decreaseRange() {
+  const rangeInput = document.getElementById("length");
+  if (rangeInput.value < rangeInput.max) {
+      rangeInput.value = parseInt(rangeInput.value) - 1;
+      updateValue(rangeInput.value);
+  }
+}
+
 

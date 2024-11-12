@@ -1,511 +1,378 @@
-@import url('https://fonts.googleapis.com/css2?family=Itim&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Itim&family=Press+Start+2P&family=Righteous&display=swap');
+
 
 
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-      
-    scroll-behavior: smooth;
-    background: #2c2e2e;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  scroll-behavior: smooth;
 
 
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Righteous", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
+:root{
+    --body-back:#d4f2f8;
+    --back-inp: rgb(68, 180, 195);
+    --fff:#fff;
+    --div-back: rgb(172, 210, 219);
+    --font-color:#18ded1;
+    --sec-font-color:#19bfc5;
+}
 
+body{
+    background: var(--body-back);
 }
 
 
 
 
-.itim-regular {
 
-    font-family: "Itim", cursive;
-   
-
-  }
-  
-
-  .righteous-regular {
-
-    font-family: "Righteous", serif;
-   
-  }
+/*           */
+/*   lock    */
+/*           */
 
 
 
-
-.home{
-    background: #2c2e2e;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
+.lock{
+    border-radius: 40px;
     height: 100vh;
 }
 
-
-#learn-me{
-    height: 180vh;
+.creator{
+    width: 50vh;
+    height: 50vh;
+    background: rgb(172, 210, 219);
+    backdrop-filter: blur(2px);
+    margin-left: 65%;
+    margin-top: -43%;
+    border-radius: 30px;
+    box-shadow: 0 0 30px #999999;
 }
 
 
-
-
-
-
-.headding{
-    padding-top: 100px;
+.creator input[type="text"]{
+    width: 35vh;
+    height: 6vh;
+    margin-left: 7%;
+   margin-top: 70px;
+   border-radius: 25px;
+   background-color: var(--body-back);
+   border-color: var(--fff);
+   outline: var(--fff);
+   font-size: 26px;
+   text-align: center;
 }
 
-span{
-    color: rgb(47, 200, 255);
-    font-size: 35px;
-    font-family: "Itim", cursive;
-    font-weight: 400;
-    font-style: normal;
-
-} 
-
-.headding h1{
-    font-family: "Righteous", serif;
-    font-weight: 400;
-    font-style: normal;
-
-    font-size: 100px;
-    color: #16ead1;
+.creator #copy-btn{
+    width: 7vh;
+    height: 6vh;
+    background: var(--back-inp);
+    color:var(--fff);
+    font-size: 18px;
+    border-color: var(--fff);
+    border-radius: 25px;
 }
 
-.client{
+.creator #generate-btn{
+    width: 42vh;
+    height: 6vh;
+    margin-left: 7%;
     margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
+    border-radius: 25px;
+    font-size: 24px;
+    border-color: var(--fff);
+    color: var(--body-back);
+    background: var(--back-inp);
 }
 
-.client p{
-    color:#5ac6fceb;
-    font-size: 35px;
-    font-family: "Itim", cursive;
-    font-weight: 400;
-    font-style: normal;
 
-    margin-bottom: 30px;
+.creator #minus{
+    width: 4vh;
+    height: 4vh;
+    background: var(--back-inp);
+    margin-left: 7%;
+    display: flex; 
+    margin-top: 60px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 1px solid var(--fff);
+    color: var(--fff);
 }
-.client input{
-    width: 50px;
-    height: 50px;
-    margin-left: 20px;
+
+.creator #plus{
+    width: 4vh;
+    height: 4vh;
+    background: var(--back-inp);
+    margin-left: 84%;
+    display: flex;
     margin-top: -20px;
-
-    font-size: 25px;
-    background: #b0dfee;
-    border: 1px solid #5ac8fb;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 1px solid var(--fff);
 }
 
-.console{
-    width: 300px;
-    height: 70px;
-    background: #b0dfee;
-    
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-
-    text-align: start;
-
-}
-
-.copy-icon{
-    font-size: 30px;
-    width: 35px;
-
-    display: flex;
-    margin-top: -48px;
-    margin-left: 86%;
-
-    background: #b0dfee;
-}
-.copy-icon i{
-    background: #b0dfee;
-}
-
-
-.console input{
-    color: #000;
-    width: 250px;
-    display: flex;
-    height: 100%;
-
-    background:  #b0dfee;
-    font-size: 25px;
-    text-align: center;
-}
-
-.client button{
-
-    font-family: "Righteous", serif;
-    font-weight: 400;
-    font-style: normal;
-
-
-
-
+.creator #plus i,
+.creator #minus i{
+    margin: auto;
     font-size: 22px;
-    height: 50px;
-    width: 85px;
-    margin-top: -20px;
-    margin-left: 5px;
-    background-color: #27aefb;
-    color: #000;
+    color: var(--body-back);
 }
 
-.headding img{
-    position: relative;
-    margin-top: -10px;
-    filter: blur(1px);
-    width: 20%;
+.creator input[type="range"]{
+    width: 30vh;
+    height: .8vh;
+    margin-left: 19.5%;
+    margin-top: -25px;
+    display: flex;
+    -webkit-appearance: none;
 }
 
-.learn-about a{
-    margin-left: 80%;
-    background: #666c6c;
-    padding: 20px;
-    border-radius: 10px;
+.creator input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance : none;
+    background : var(--back-inp);
+    border-radius: 30px;
+    height : 30px;
+    width : 30px;
+    border: 2px solid #fff;
+  }
 
-    text-decoration: none;
-    font-size: 18px;
-    color: #000;
-}
-.learn-about{
-    margin-top: 30px;
+.creator input[type="range"]::-webkit-slider-runnable-track{
+  border-radius: 20px;
 }
 
 
-
-
-/*              */
-/*   learn-me   */
-/*              */
-
-
-
-.using-video video{
-    margin-top: 10%;
-    margin-left: 15%;
-    width: 30%;
-    height: 510px;
-
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border: 5px solid #000;
-    box-shadow: 0 0 30px #000;
-}
-
-.user-M{
-    margin-top: -27%;
-    margin-left: 55%;
-    width: 550px;
-    height: 500px;
-
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border: 5px solid #000;
-    box-shadow: 0 0 30px #000;
-
-    text-align: center;
-}
-
-.user-M h2{
-    color: #27aefb;
-    font-size: 38px;
-    font-family: "Righteous", serif;
-
-}
-
-.user-M p{
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 2%;
+.creator #length-txt{
     font-size: 28px;
-    color: #b0dfee;
-    text-align: start;
-
-    font-family: "Itim", cursive;
-
+    margin-left: 30%;
+    margin-top: 6%;
+    color: var(--fff);
 }
 
-.user-M  #sp{
-    font-size: 18px;
+.creator #length-txt span{
+    background: var(--body-back);
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 30px;
+    color: var(--back-inp);
 }
 
-.User-manual{
-    margin-top: 25vh;
+/* boy wanna read */
+
+
+.cont-boy-read .boy-container{
+    margin-top: -5%;
+    margin-left: 5%;
 }
 
-/*              */
-/*   bottom     */
-/*              */
-
-
-
-.bottom{
+.cont-boy-read .text-container{
+    width: 45vh;
     height: 30vh;
-    background: #313334;
+    background: var(--div-back);
+    margin-left: 30%;
+    margin-top: 20vh;
+    border-radius: 15px;
 }
 
-.bottom h3 i img{
-    width: 40px;
-    position: absolute;
-    background: #313334;
+.cont-boy-read .text-container p{
+    width: 90%;
+    margin-left: 5%;
+    padding: 10%;
+    font-size: 22px;
+}
+
+.cont-boy-read .text-container a{
+    margin-left: 70%;
+    color: var(--back-inp);
+}
+
+.cont-boy-read .text-direction{
+    width: 28%;
+    height: 120px;
+    background: var(--div-back);
+    clip-path: polygon(54% 0, 0% 100%, 53% 36%);
+     margin-left: 22%;
+    margin-top: -5%;
 }
 
 
-.bottom h3{
-  font-size: 25px;
-  background: #313334;
-  color: #16ea44;
 
-  font-family: "Righteous", serif;
-  cursor: pointer;
-}
+/* read more section */
 
-.bottom {
-    position: relative;
+
+/* how strong and safe */
+
+.how-is-this{
+    width: 80%;
+    height: 70vh;
+    margin-left: 10%;
     text-align: center;
 }
 
-.maider{
-    position: absolute;
-    margin-top: 70px;
-   margin-left: 46%;
+.how-is-this  h1{
+    font-size: 45px;
+    color: var(--font-color);
 }
 
-
-
-/*              */
-/*   benefits   */
-/*              */
-
-
-.benefits{
-    height: 30vh;
-    margin-top: 100px;
-    text-align: center;
-
-    display:  flex;
+.how-is-this .mith-container{
+    display: flex;
     flex-wrap: wrap;
-
-    justify-content: center;
+    margin-top: 10%;
 }
 
-.head h1{
-    color:#27aefb;
-    font-size: 46px;
-
-    font-family: "Righteous", serif;
-}
-.head{
-    text-align: center;
-    margin-top: 33vh;
+.how-is-this .mith{
+    width: 25%;
+    height: 35vh;
+    margin-left: 6%;
+    background: var(--div-back);
+    border-radius: 20px;
+    box-shadow:0 0 40px #a7d7db;
 }
 
 
-.benefits .point{
-    width: 300px;
-    height: 300px;
-    margin-left: 60px;
-    border: 2px solid #000;
-    box-shadow: 0 0 30px #000;
+.how-is-this .mith .icon{
+    margin-top: 5%;
+    height: 30%;
+    font-size: 90px;
+    color: #465e5d;
 }
 
-
-.icon{
-    height: 35%;
-}
-.icon i{
-    font-size: 80px;
-    margin-top: 10px;
-    color:#71a6b8fa;
-}
-.point h2{
+.how-is-this .mith h2{
     height: 15%;
-    font-family: "Righteous", serif;
-
-    color: #16ead1;
+    margin-top: 5%;
+    color: var(--sec-font-color);
 }
 
-.point p{
-    height: 50%;
+.how-is-this .mith .para{
+    height: 55%;
     width: 80%;
     margin-left: 10%;
-    font-family: "Itim", cursive;
-    font-size: 16px;
-    color: #fff;
+    text-align: start;
+    color: #619da9;
+
 }
 
 
 
 
-/*              */
-/*   webkits    */
-/*              */
+/* section outer */
 
-
-
-::-webkit-scrollbar{
-    width: 3px;
-}
-::-webkit-scrollbar-track{
-    background:#000;
-}
-::-webkit-scrollbar-thumb{
-    background: #16ead1;
-}
-::-webkit-scrollbar-thumb:hover{
-    background: #16ea44;
+.outer{
+    height: 20vh;
+    background:#a6e7eb;
 }
 
+.outer .jd{
+    width: 10%;
+    height: 40%;
+    color: #2b513c;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.outer .to-know{
+    width: 15%;
+    height: 50%;
+    margin-left: auto;
+    padding-top: 60px;
+}
 
 
-@media (max-width:768px){
 
-    body{
-        justify-content: center;
-        align-items: center;
 
-        width: 100%;
+.mobile-only{
+    display: none;
+}
 
-    }
-
-    .using-video video{
-        height: 250px;
-    }
-
-    .learn-about a{
-       margin-left: auto;
-       margin-right: auto;
-       font-size: 12px;
-    }
-
-    .headding h1{
-        font-size: 50px;
-    }
-
-    .headding img{
-        width: 300px;
-    }
+@media (max-width:768px) {
     
-    .console{
+
+    .lock{
+        height: auto;
+    }
+
+    .creator{
+        margin: 0;
+        margin: auto;
+        margin-top: 20%;
+        width: 37vh;
+    }
+
+    .creator input[type="text"]{
+        width: 24vh;
+    }
+
+    .creator #generate-btn{
+        width: 32vh;
+    }
+
+    .creator input[type="range"]{
+        width: 23vh;
+    }
+
+    .creator #plus {
+        margin-top: -14px;
+    }
+
+    
+    .creator #length-txt{
+        margin-left: 25%;
+        font-size: 24px;
+    }
+
+    .creator #length-txt span{
+        font-size: 22px;
+        padding: 7px;
+    }
+
+
+
+    .cont-boy-read{
+        display: none;
+    }
+
+
+
+    .how-is-this h1{
+        font-size: 30px;
+    }
+
+    .how-is-this .mith{
+        width: 35vh;
+        margin-top: 40px;
+        margin-bottom: 20px;
         margin-left: auto;
         margin-right: auto;
-
-        width: 200px;
-        height: 50px;
-    }
-   
-    .console input{
-        width: 150px;
-        font-size: 16px;
     }
 
-    .client{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .client p{
-        margin-bottom: 30px;
-    }
-
-    .copy-icon{
-        margin-left:79%;
-        margin-top: -40px;
+    .how-is-this{
+        height: auto;
     }
 
 
 
-
-
-
-
-    .User-manual{
-        margin-top: 130vh;
+    .outer .jd{
+        width: 20vh;
     }
-
-
-    .using-video video{
-        width: 70%;
-       margin-left: 16%;
-    }
-    
-    .user-M{
-        margin-top: 0;
-        width: 70%;
-        height: 400px;
-        margin-top: 20px;
-        margin-left: 16%;
-    }
-
-    .user-M h2{
-        font-size: 26px;
-    }
-    .user-M p{
-        font-size: 18px;
-    }
-
-    .user-M #sp{
-        padding-top: 20px;
+    .outer .to-know{
+        width: 19vh;
         font-size: 12px;
+        color: #3a4a4d;
     }
 
 
-    .head{
-        margin-top: 5vh;
+    .mobile-only{
+        margin-top: 140px;
+        margin-left: 28%;
+        padding-bottom: 300px;
+        color: var(--back-inp);
+        display: flex;
     }
-
-    .head h1{
-        font-size: 20px;
-    }
-    .point h2{
-        font-size: 19px;
-    }
-
-    .benefits{
-        margin-top: 30px;
-    }
-    .benefits .point{
-        width: 230px;
-        height: 260px;
-        margin-left: 10px;
-        margin-top: 30px;
-    }
-
-    .icon i{
-        font-size: 50px;
-    }
-    .icon {
-        height: 30%;
-    }
-
-    #learn-me{
-        height: 300vh;
-    }
-
-
-
-
-
-
-    .bottom{
-        height: 10vh;
-    }
-    .maider{
-        margin-top: 20px;
-        margin-left: 35%;
-    }
-    
 }
-
-

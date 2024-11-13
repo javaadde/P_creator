@@ -1,4 +1,4 @@
-# P-creatore
+# PickPazzz
 
 ##### view demo :- https://p-creator.onrender.com
 

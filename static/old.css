@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Itim&family=Press+Start+2P&family=Righteous&display=swap');
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  scroll-behavior: smooth;
+
+
+  font-family: "Righteous", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root{
+    --body-back:#d4f2f8;
+    --back-inp: rgb(68, 180, 195);
+    --fff:#fff;
+    --div-back: rgb(172, 210, 219);
+    --font-color:#18ded1;
+    --sec-font-color:#19bfc5;
+}
+
+body{
+    background: var(--body-back);
+}
+
+
+
+
+
+/*           */
+/*   lock    */
+/*           */
+
+
+
+.lock{
+    border-radius: 40px;
+    height: 100vh;
+}
+
+.creator{
+    width: 50vh;
+    height: 50vh;
+    background: rgb(172, 210, 219);
+    backdrop-filter: blur(2px);
+    margin-left: 65%;
+    margin-top: -43%;
+    border-radius: 30px;
+    box-shadow: 0 0 30px #999999;
+}
+
+
+.creator input[type="text"]{
+    width: 35vh;
+    height: 6vh;
+    margin-left: 7%;
+   margin-top: 70px;
+   border-radius: 25px;
+   background-color: var(--body-back);
+   border-color: var(--fff);
+   outline: var(--fff);
+   font-size: 26px;
+   text-align: center;
+}
+
+.creator #copy-btn{
+    width: 7vh;
+    height: 6vh;
+    background: var(--back-inp);
+    color:var(--fff);
+    font-size: 18px;
+    border-color: var(--fff);
+    border-radius: 25px;
+}
+
+.creator #generate-btn{
+    width: 42vh;
+    height: 6vh;
+    margin-left: 7%;
+    margin-top: 40px;
+    border-radius: 25px;
+    font-size: 24px;
+    border-color: var(--fff);
+    color: var(--body-back);
+    background: var(--back-inp);
+}
+
+
+.creator #minus{
+    width: 4vh;
+    height: 4vh;
+    background: var(--back-inp);
+    margin-left: 7%;
+    display: flex; 
+    margin-top: 60px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 1px solid var(--fff);
+    color: var(--fff);
+}
+
+.creator #plus{
+    width: 4vh;
+    height: 4vh;
+    background: var(--back-inp);
+    margin-left: 84%;
+    display: flex;
+    margin-top: -20px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 1px solid var(--fff);
+}
+
+.creator #plus i,
+.creator #minus i{
+    margin: auto;
+    font-size: 22px;
+    color: var(--body-back);
+}
+
+.creator input[type="range"]{
+    width: 30vh;
+    height: .8vh;
+    margin-left: 19.5%;
+    margin-top: -25px;
+    display: flex;
+    -webkit-appearance: none;
+}
+
+.creator input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance : none;
+    background : var(--back-inp);
+    border-radius: 30px;
+    height : 30px;
+    width : 30px;
+    border: 2px solid #fff;
+  }
+
+.creator input[type="range"]::-webkit-slider-runnable-track{
+  border-radius: 20px;
+}
+
+
+.creator #length-txt{
+    font-size: 28px;
+    margin-left: 30%;
+    margin-top: 6%;
+    color: var(--fff);
+}
+
+.creator #length-txt span{
+    background: var(--body-back);
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 30px;
+    color: var(--back-inp);
+}
+
+/* boy wanna read */
+
+
+.cont-boy-read .boy-container{
+    margin-top: -5%;
+    margin-left: 5%;
+}
+
+.cont-boy-read .text-container{
+    width: 45vh;
+    height: 30vh;
+    background: var(--div-back);
+    margin-left: 30%;
+    margin-top: 20vh;
+    border-radius: 15px;
+}
+
+.cont-boy-read .text-container p{
+    width: 90%;
+    margin-left: 5%;
+    padding: 10%;
+    font-size: 22px;
+}
+
+.cont-boy-read .text-container a{
+    margin-left: 70%;
+    color: var(--back-inp);
+}
+
+.cont-boy-read .text-direction{
+    width: 28%;
+    height: 120px;
+    background: var(--div-back);
+    clip-path: polygon(54% 0, 0% 100%, 53% 36%);
+     margin-left: 22%;
+    margin-top: -5%;
+}
+
+
+
+/* read more section */
+
+
+/* how strong and safe */
+
+.how-is-this{
+    width: 80%;
+    height: 70vh;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.how-is-this  h1{
+    font-size: 45px;
+    color: var(--font-color);
+}
+
+.how-is-this .mith-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10%;
+}
+
+.how-is-this .mith{
+    width: 25%;
+    height: 35vh;
+    margin-left: 6%;
+    background: var(--div-back);
+    border-radius: 20px;
+    box-shadow:0 0 40px #a7d7db;
+}
+
+
+.how-is-this .mith .icon{
+    margin-top: 5%;
+    height: 30%;
+    font-size: 90px;
+    color: #465e5d;
+}
+
+.how-is-this .mith h2{
+    height: 15%;
+    margin-top: 5%;
+    color: var(--sec-font-color);
+}
+
+.how-is-this .mith .para{
+    height: 55%;
+    width: 80%;
+    margin-left: 10%;
+    text-align: start;
+    color: #619da9;
+
+}
+
+
+
+
+/* section outer */
+
+.outer{
+    height: 20vh;
+    background:#a6e7eb;
+}
+
+.outer .jd{
+    width: 10%;
+    height: 40%;
+    color: #2b513c;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.outer .to-know{
+    width: 15%;
+    height: 50%;
+    margin-left: auto;
+    padding-top: 60px;
+}
+
+
+
+
+.mobile-only{
+    display: none;
+}
+
+@media (max-width:768px) {
+    
+
+    .lock{
+        height: auto;
+    }
+
+    .creator{
+        margin: 0;
+        margin: auto;
+        margin-top: 20%;
+        width: 37vh;
+    }
+
+    .creator input[type="text"]{
+        width: 24vh;
+    }
+
+    .creator #generate-btn{
+        width: 32vh;
+    }
+
+    .creator input[type="range"]{
+        width: 23vh;
+    }
+
+    .creator #plus {
+        margin-top: -14px;
+    }
+
+    
+    .creator #length-txt{
+        margin-left: 25%;
+        font-size: 24px;
+    }
+
+    .creator #length-txt span{
+        font-size: 22px;
+        padding: 7px;
+    }
+
+
+
+    .cont-boy-read{
+        display: none;
+    }
+
+
+
+    .how-is-this h1{
+        font-size: 30px;
+    }
+
+    .how-is-this .mith{
+        width: 35vh;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .how-is-this{
+        height: auto;
+    }
+
+
+
+    .outer .jd{
+        width: 20vh;
+    }
+    .outer .to-know{
+        width: 19vh;
+        font-size: 12px;
+        color: #3a4a4d;
+    }
+
+
+    .mobile-only{
+        margin-top: 140px;
+        margin-left: 28%;
+        padding-bottom: 300px;
+        color: var(--back-inp);
+        display: flex;
+    }
+}

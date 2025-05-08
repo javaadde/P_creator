@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pickpazzz</title>
+    <link rel="stylesheet" href="/static/style.css">
+
+    <link rel="icon" href="/static/images/log.png" type="image/png">
+
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+
+
+
+
+    <div class="cont-boy-read">
+
+        <div class="text-container">
+
+            <p>A strong, unique password
+                 is your first line of defense 
+                 online—think of it like a secure 
+                 lock on your front door
+            </p>
+
+            <a href="#readmore">read more</a>
+
+        </div>
+
+        <div class="text-direction">
+        </div>
+
+        <div class="boy-container">
+            <img src="/static/images/boy.png" alt="">
+        </div>
+
+    </div>
+    
+
+
+
+
+
+    <section class="lock" id="lock">
+        <div class="creator">
+
+            <input type="text" id="result" readonly>
+
+            <button id="copy-btn">copy</button>
+
+            <button id="generate-btn" onclick="create()">generate</button>
+
+            <span id="minus" onclick="decreaseRange()"><i class='bx bx-minus' ></i></span>
+            <input type="range" min="8" max="50" id="length" oninput="updateValue(this.value)">
+            <span id="plus" onclick="increaseRange()"><i class='bx bx-plus'></i></span>
+
+            <p id="length-txt">Length : <span id="rangeValue">29</span></p>
+
+
+        </div>
+    </section>
+
+
+
+
+
+    <div class="mobile-only">
+        
+        <span> scroll <i class='bx bx-chevrons-up bx-fade-up'></i></span>
+    </div>
+
+
+
+
+    <section class="readmore" id="readmore">
+        <div class="how-is-this">
+
+            <h1>How Is This Strong And Safe</h1>
+
+
+         <div class="mith-container">
+
+            <div class="mith">
+                <div class="icon">   
+                   <i class='bx bx-lock' ></i>
+                </div>
+                
+                <h2>Long</h2>
+                
+                <div class="para">
+                    <p>The longer a password, 
+                        the more secure it is.
+                         A strong password should
+                        be at least 10
+                       characters long.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="mith">
+                <div class="icon"> 
+                    <i class='bx bxs-key' ></i>
+                </div>
+                
+                <h2>Complex</h2>
+                
+                <div class="para">
+                    <p>Strong passwords use a 
+                        combination of letters, numbers, cases, 
+                        and symbols to form an 
+                        unpredictable string of characters 
+                        that doesn't resemble words or names.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="mith">
+                <div class="icon"> 
+                    <i class='bx bx-fingerprint' > </i>
+                </div>
+                
+                <h2>Unique</h2>
+                
+                <div class="para">
+                    <p>Unique
+
+                        A strong password should be 
+                        unique to each account to 
+                        reduce vulnerability in the
+                         event of a hack.
+                    </p>
+                </div>
+            </div>
+
+          </div>
+
+        </div>
+    </section>
+   
+
+
+
+
+    <section class="outer">
+
+        <div class="jd">
+            <h3>made by jd </h3>
+        </div>
+
+        <div class="to-know">
+            <span>to khow who is it <a href="https://javaadde.github.io/portfolio/">here</a></span>
+        </div>
+
+    </section>
+
+    
+    <script src="/static/script.js"></script>
+</body>
+</html>

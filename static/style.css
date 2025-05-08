@@ -79,6 +79,10 @@ body {
   input.form-control:disabled{
     background-color: var(--input-back);
     border-color: var(--primery);
+  } 
+
+  input[type=text]{
+    color: var(--text-color);
   }
 
   .copy-btn{
@@ -86,7 +90,7 @@ body {
   }
 
   .copy-btn i{
-    color: #000;
+    color:var(--text-color);
   }
 
   .copy-btn:hover{
@@ -118,3 +122,8 @@ body {
   label span{
     color: #daa4f3;
   }
+
+  .bg-violet{
+    background: #9633c4;
+  }
+  

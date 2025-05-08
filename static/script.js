@@ -14,24 +14,20 @@ async function create() {
 
 }
 
+
+
 function copyToClipboard() {
   const textField = document.getElementById('result');
-
-  if (navigator.clipboard) {
-    navigator.clipboard.writeText(textField.value)
-      .then(() => {
-        alert('Text copied to clipboard!');
-      })
-      .catch(err => {
-        console.error('Failed to copy:', err);
-      });
-  } else {
-    // Fallback for older browsers (not recommended)
-    textField.select();
-    document.execCommand('copy');
-    alert('Text copied (fallback method)');
-  }
+  navigator.clipboard.writeText(textField.value)
+    .then(() => {
+      const toast = new bootstrap.Toast(document.getElementById('copyToast'));
+      toast.show();
+    })
+    .catch(err => {
+      console.error('Failed to copy: ', err);
+    });
 }
+
 
 
 function Link(){

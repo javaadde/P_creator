@@ -14,22 +14,24 @@ async function create() {
 
 }
 
+function copyToClipboard() {
+  const textField = document.getElementById('result');
 
-
-
-const copyButton = document.getElementById('copy-btn');
-const textField = document.getElementById('result');
-
-copyButton.addEventListener('click', () => {
-
-  textField.select();
-  textField.setSelectionRange(0, 99999);
-
-  document.execCommand('copy');
-
-  alert('Text copied to clipboard!');
-
-});
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(textField.value)
+      .then(() => {
+        alert('Text copied to clipboard!');
+      })
+      .catch(err => {
+        console.error('Failed to copy:', err);
+      });
+  } else {
+    // Fallback for older browsers (not recommended)
+    textField.select();
+    document.execCommand('copy');
+    alert('Text copied (fallback method)');
+  }
+}
 
 
 function Link(){

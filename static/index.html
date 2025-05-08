@@ -23,12 +23,12 @@
     
         <div class="mb-3 text-center">
           <label for="lengthRange" class="form-label">Password Length: <span id="rangeValue">12</span></label>
-          <input type="range" class="form-range" min="4" max="32" value="12" id="lengthRange">
+          <input type="range" class="form-range" min="4" max="32" value="12" id="length" oninput="updateValue(this.value)">
         </div>
     
         <div class="input-group mb-3">
           <input type="text" class="form-control" id="result" placeholder="Generated password" disabled>
-          <button class="btn btn-outline-secondary copy-btn" type="button" id="copy-btn"><i id="rangeValue" class='bx bxs-copy'></i></button>
+          <button class="btn btn-outline-secondary copy-btn" type="button" id="copy-btn"><i  class='bx bxs-copy'></i></button>
         </div>
     
         <div class="d-grid">
